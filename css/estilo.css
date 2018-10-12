@@ -1,0 +1,51 @@
+/* MENU SESSÃO */
+#icone_sair{
+  margin-left: 85%;
+  color: white;
+}
+
+/* MENU SEM SESSÃO */
+.faixa_menu{
+  font-family: Sawasdee;
+  background-color: #20B2AA;
+}
+
+/* CADASTRO */
+#botao_cadastro_Adm{
+  width: 70%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+.borda{
+  border-radius: 10px 20px;
+  width:300px;
+  box-shadow: 1px 1px;
+}
+
+
+/* LOGIN */
+.box_login{
+  margin-top: 5%;
+}
+#botao_login{
+  width: 79%;
+}
+.borda{
+  border-radius: 10px 20px;
+  width:300px;
+  box-shadow: 1px 1px;
+}
+
+/* TELA USERS PADRÃO */
+
+/* TELA ADM */
+
+/* FOOTER */
+.boomerang-rodape{
+  background-color: #EDDEBF;
+  font-family: Sawasdee;
+  margin-top: 12%;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 1%;
+}
