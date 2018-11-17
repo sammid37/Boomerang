@@ -59,16 +59,16 @@ SELECT*FROM Objeto;
 
 create table Objeto_Devolvido(
 	ID_ObjDev int NOT NULL AUTO_INCREMENT,
-	ID_Obj INT NOT NULL, 
-	Matricula_D BIGINT NOT NULL,
-    Nome_ObjDev VARCHAR(50) NOT NULL,
+	Obj INT NOT NULL, 
+	Matri_User BIGINT NOT NULL,
     Nome_Dono VARCHAR(50) NOT NULL,
-    Matricula_Dono INT UNIQUE NOT NULL, 
+    Mat_Dono INT UNIQUE NOT NULL, 
     Data_Dev DATE NOT NULL,
     PRIMARY KEY (ID_ObjDev),
-    FOREIGN KEY (ID_Obj) REFERENCES Objeto(ID_Obj),
-	FOREIGN KEY (Matricula_D) REFERENCES Usuario(Matricula)
+    FOREIGN KEY (Obj) REFERENCES Objeto(ID_Obj),
+	FOREIGN KEY (Matri_User) REFERENCES Usuario(Matricula)
 );
--- DROP TABLE Objeto_Devolvido;
 
-SELECT*FROM Objeto_Devolvido;
+SELECT * FROM Objeto_Devolvido;
+SELECT O.Nome_Obj FROM Objeto_Devolvido OD, Objeto O WHERE OD.Obj = O.ID_Obj;
+DELETE Objeto FROM Objeto, Objeto_Devolvido WHERE Objeto_Devolvido.Obj = Objeto.ID_Obj;
