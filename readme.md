@@ -5,5 +5,6 @@ Projeto escolar como realizar a prática do Processo Acadêmico Simplificado(PAS
 
 # atualizações
 _Em breve novas atualizações._
+_Em breve novas atualizações._
 
 **Desenvolvido pela equipe Quote++**
