@@ -55,8 +55,8 @@
 					    <label for="tipousuario">Tipo de usuário</label>
 					    <select name="tipousuario" class="form-control" id="tipousuario">
 								<option value="0" disabled selected>selecione o tipo de usuário</option>
-					      <option value='1' name="tipousuario">1 Administrador</option>
-					      <option value='2' name="tipousuario">2 Funcionario ou Bolsista</option>
+					      <option value="1" name="tipousuario">1 Administrador</option>
+					      <option value="2" name="tipousuario">2 Funcionario ou Bolsista</option>
 					    </select>
   				</div>
 
