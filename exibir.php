@@ -19,9 +19,9 @@
         }
       }
        if(!existe){
-        die("OBJ N CADADTRAEO");
+        die("Objeto não cadastrado");
       }else{
-        echo"É PARA DELTAR!";
+        // echo"É PARA DELTAR!";
         $sql = "DELETE FROM Objeto WHERE ID_Obj = ".$Obj;
         $result = mysqli_query($con, $sql);
       }

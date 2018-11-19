@@ -1,14 +1,5 @@
 create schema boomerang;
 use boomerang; 
--- 	DROP SCHEMA boomerang;
-
-
--- create table TipoUsuario(
--- 	codigo int primary key,
---     descricao varchar(20)
--- );
--- insert into TipoUsuario values(1, 'Administrador');
--- insert into TipoUsuario values(2, 'Bolsista');
 
 create table Usuario(
 -- ID_User int auto_increment,
@@ -71,4 +62,4 @@ create table Objeto_Devolvido(
 
 SELECT * FROM Objeto_Devolvido;
 SELECT O.Nome_Obj FROM Objeto_Devolvido OD, Objeto O WHERE OD.Obj = O.ID_Obj;
-DELETE Objeto FROM Objeto, Objeto_Devolvido WHERE Objeto_Devolvido.Obj = Objeto.ID_Obj;
+-- DELETE Objeto FROM Objeto, Objeto_Devolvido WHERE Objeto_Devolvido.Obj = Objeto.ID_Obj;

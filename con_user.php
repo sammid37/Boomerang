@@ -7,6 +7,7 @@
 	$Senha = $_POST['Senha'];
 	$tipousuario = $_POST['tipousuario'];
 
+
 	if ($tipousuario == 1) {
 		$insertA = "INSERT INTO Administrador VALUES ('$Nome',$Matricula,md5('$Senha'),$tipousuario)";
 		$query = "INSERT INTO Usuario VALUES('$Nome',$Matricula,md5('$Senha'),$tipousuario)";
@@ -14,10 +15,10 @@
 		$resultA = mysqli_query($con,$insertA);
 		$result = mysqli_query($con,$query);
 
-		if ($resultA) {
+		if ($result) {
 			echo "<h4>Administrador cadastrado com sucesso</h4>";
 		}else {
-			echo "<h4>Falha ao realizar cadastro</h4>".$con;
+			echo "<h4>Falha ao realizar cadastro</h4>";
 		}
 	}elseif ($tipousuario == 2) {
 		$insertF = "INSERT INTO Funcionario VALUES ('$Nome',$Matricula,md5('$Senha'),$tipousuario)";
