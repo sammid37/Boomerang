@@ -10,5 +10,6 @@ Projeto escolar como realizar a prática do Processo Acadêmico Simplificado(PAS
 
 # Precisa ser optimizado:
 * Exclusão de objeto perdido da lista após ser devolvido ao seu dono;
+  * Sem data prevista para a modificação
 
 **Desenvolvido pela equipe Quote++**
