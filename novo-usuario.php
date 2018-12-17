@@ -1,31 +1,3 @@
-<?php
-	// COMENTEI ESSE TROÇO DAQUI
-	// session_start();
-	//
-	// if(!isset($_SESSION['acesso']) || ($_SESSION['acesso'] != "OK" || $_SESSION['tipousuario'] != '1') ) {
-	// 	$_SESSION["acesso"] = "Você deverá se autenticar!";
-	// 	header("Location: tela_login.php");
-	// }
-	// ATÉ AQUIII
-
-
-	// else if (!isset($_SESSION['login']) || $_SESSION['tipousuario'] != '1' ){
-	// 	$_SESSION["acesso"] = "Você não tem permissão para acessar essa página";
-	// 	header("Location: tela_login.php");
-	// }
-	//
-	// if(!isset($_SESSION['acesso']) || ($_SESSION['acesso'] != "OK" ||$_SESSION['ocupa'] != '3' ) ) {
-  //   $_SESSION["acesso"] = "<script>alert('Você não é ADM do sistema');</script>";
-  //   header("location: login.php");
-  // }
-?>
-
-<?php
-// include_once 'header.php';
-// include_once 'menu.php';
-// require 'con_user.php';
-?>
-
 <form method="post" action="con_user.php">
 	<div class="row box_login">
 		<div class="col-sm-12">
@@ -66,7 +38,3 @@
 		</div>
 	</div>
 </form>
-
-<?php
-	// include_once 'footer.php'
-?>
