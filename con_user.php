@@ -9,10 +9,10 @@
 
 
 	if ($tipousuario == 1) {
-		$insertA = "INSERT INTO Administrador VALUES ('$Nome',$Matricula,md5('$Senha'),$tipousuario)";
+		// $insertA = "INSERT INTO Administrador VALUES ('$Nome',$Matricula,md5('$Senha'),$tipousuario)";
 		$query = "INSERT INTO Usuario VALUES('$Nome',$Matricula,md5('$Senha'),$tipousuario)";
 
-		$resultA = mysqli_query($con,$insertA);
+		// $resultA = mysqli_query($con,$insertA);
 		$result = mysqli_query($con,$query);
 
 		if ($result) {
@@ -21,13 +21,13 @@
 			echo "<h4>Falha ao realizar cadastro</h4>";
 		}
 	}elseif ($tipousuario == 2) {
-		$insertF = "INSERT INTO Funcionario VALUES ('$Nome',$Matricula,md5('$Senha'),$tipousuario)";
+		// $insertF = "INSERT INTO Funcionario VALUES ('$Nome',$Matricula,md5('$Senha'),$tipousuario)";
 		$query = "INSERT INTO Usuario VALUES('$Nome',$Matricula,md5('$Senha'),$tipousuario)";
 
-		$resultF = mysqli_query($con,$insertF);
+		// $resultF = mysqli_query($con,$insertF);
 		$result = mysqli_query($con,$query);
 
-		if ($resultF) {
+		if ($result) {
 			echo "<h4>Funcionario cadastrado com sucesso</h4>";
 		}else {
 			echo "<h4>Falha ao realizar cadastro</h4>";
@@ -41,4 +41,4 @@
 
 ?>
 
-<a href="tela_adm.php">Retornar para tela de adm</a>
+<a href="admin.php">Retornar para tela de adm</a>

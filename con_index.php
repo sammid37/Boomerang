@@ -1,14 +1,14 @@
 <?php
-
-	include "Squid_Conexao.php";
+	include "conexao.php";
 	
-    $Nome_Obj = $_POST['Nome_Obj'];
+  $Nome_Obj = $_POST['Nome_Obj'];
+	$Desc_Obj = $_POST['Desc_Onj'];
 	$Local_Obj = $_POST['Local_Obj'];
-	$Data = $_POST['Data'];
+	$Armazenamento = $_POST['Armazenamento'];
+	$DataP = $_POST['DataP'];
 
-	$query = "insert into Objeto(`Nome_Obj`,`Local_Obj`,`Data`) values ('$Nome_Obj','$Local_Obj','$Data');"; 
-	
-	
+	$query = "INSERT INTO Objeto('Nome_Obj','Desc_Obj','Local_Obj','Armazenamento','Data_P') 
+	VALUES ('$Nome_Obj','$Desc_Obj','$Local_Obj','$Armazenamento','$DataP');"; 
+
 	$run = mysqli_query($con,$query);
-	
 ?>

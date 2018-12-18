@@ -1,0 +1,24 @@
+body{
+  margin: auto;
+  background-color: #94CCAB;
+}
+#menu{
+  
+  background-color: #292929;
+}
+#menu a{color: white;}
+header{margin: auto; text-align: center;}
+
+.container{
+  margin: auto;
+ width: 75%;
+}
+
+footer{
+  background-color: #292929;
+  color: #fff;
+  text-align: center;
+  clear: both;
+  padding: 20px;
+  width: 100%;
+}

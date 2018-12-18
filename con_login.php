@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	include_once 'Squid_Conexao.php';
+	include_once 'conexao.php';
 
 	$Matricula = isset($_POST['Matricula']) ? trim($_POST['Matricula']):FALSE;
 	$Senha = isset($_POST['Senha']) ? trim($_POST['Senha']):FALSE;
@@ -23,17 +23,17 @@
 	  	$_SESSION['acesso'] = "OK";
 
 	  	if($_SESSION['tipousuario'] == 1){
-	  		header("location: tela_adm.php");
+	  		header("location: admin.php");
 	    } else if($_SESSION['tipousuario'] == 2){
-	      header("location: tela_index.php");
+	      header("location: funcionario.php");
 	    }else{
-	    	header("location: tela_login.php");
+	    	header("location: login.php");
 	    }
 	  }else {
 	  	$_SESSION['Matricula']  = "$Matricula";
 	  	$_SESSION['Senha']  = "";
 	  	$_SESSION['acesso'] = "tente de novo";
-	  	header("location: tela_login.php");
+	  	header("location: login.php");
 	  }
 
 ?>
